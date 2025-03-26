@@ -1,8 +1,10 @@
-#include "Zombie.hpp"
+#include "Zombie.h"
 
 Zombie::Zombie(std::string name){
 	this->name = name;
 }
+
+Zombie::Zombie(void ){this->name = "";}
 
 Zombie::~Zombie(void){}
 
