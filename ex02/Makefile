@@ -1,23 +1,23 @@
-NAME = address
+NAME = account
 CC = c++
 FLAGS = -std=c++98 -Wall -Wextra -Werror
-SRC = main.cpp
+SRC = Account.cpp tests.cpp
 OBJ = $(SRC:.cpp=.o)
 
 %.o: %.cpp
 	$(CC) $(FLAGS) -c $< -o $@
 
-all: $(NAME)
+all : $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME) $(FLAGS)
 
 clean:
-	@rm -f $(OBJ)
-	@echo "Objects Removed"
+	@rm -rf $(OBJ)
+	@echo "Objects clean"
 
 fclean: clean
-	@rm -f $(NAME)
+	@rm -rf $(NAME)
 	@echo "Executable removed"
 
 re: fclean all
