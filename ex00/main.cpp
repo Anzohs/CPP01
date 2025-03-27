@@ -14,10 +14,10 @@
 
 int	main(void)
 {
- Zombie *z = newZombie("Brains");
-randomChump("Zombie");
- Zombie s = Zombie("Tereza");
- s.announce();
- z->announce();
-delete z;
+	Zombie *z = newZombie("Brains");
+	randomChump("Zombie");
+	Zombie s = Zombie("Tereza");
+	s.announce();
+	z->announce();
+	delete z;
 }

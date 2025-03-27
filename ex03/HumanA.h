@@ -1,4 +1,3 @@
-#pragma once
 #ifndef HUMANA_H
 # define HUMANA_H
 
