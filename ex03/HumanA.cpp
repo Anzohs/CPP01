@@ -1,7 +1,7 @@
 #include "HumanA.h"
 #include "Weapon.h"
 
-HumanA::HumanA(std::string name, Weapon &w): name(name), w(w)
+HumanA::HumanA(std::string name, Weapon &w) : w(w), name(name)
 {
 }
 

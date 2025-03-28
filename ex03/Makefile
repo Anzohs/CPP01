@@ -19,3 +19,5 @@ clean:
 fclean: clean
 	@rm -f $(NAME)
 	@echo "Executable removed"
+
+re: fclean all
