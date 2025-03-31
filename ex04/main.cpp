@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/29 19:15:15 by hladeiro          #+#    #+#             */
+/*   Updated: 2025/03/30 13:06:32 by hladeiro         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <fstream>
 #include <iostream>
 #include "myh.h"
@@ -14,10 +26,9 @@ static int checker (std::string s1, std::string s2, std::string file)
 	return (1);
 }
 
-static std::fstream valid_file(std::string file){
-	std::fstream fd;
+static std::ifstream valid_file(std::string file){
+	std::ifstream fd(file);
 
-	fd.open(file.c_str());
 	if (!fd.good())
 	{
 		std::cerr << "File not found or bad file \n";
@@ -30,12 +41,13 @@ int	main(int argv, string argc[]){
 	std::string file;
 	std::string s1;
 	std::string s2;
-	std::fstream fd;
+	std::ifstream fd;
 	std::ofstream f;
 
 	if (argv != 4)
 	{
-		std::cerr << "Wrong number of arguments!! it shoud be the following: filename string string\n";
+		std::cerr << "Wrong number of arguments!!"\
+				"it shoud be the following: filename string string\n";
 		return (1);
 	}
 	file = argc[1];
@@ -44,4 +56,13 @@ int	main(int argv, string argc[]){
 	if (checker(s1, s2, file) == -1)
 		return (1);
 	fd = valid_file(file);
+	f.open(file + ".replace");
+	if (!f.good())
+	{
+		std::cerr << "Error creating outputfile, check your device space\n";
+		return (fd.close(), 1);
+	}
+	subsitute(fd, f, s1, s2);
+	fd.close();
+	f.close();
 }
