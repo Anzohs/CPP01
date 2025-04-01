@@ -6,8 +6,12 @@
 #    By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/31 20:43:24 by hladeiro          #+#    #+#              #
-#    Updated: 2025/03/31 20:43:28 by hladeiro         ###   ########.fr        #
+#    Updated: 2025/03/31 21:51:49 by hladeiro         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+NAME = harl
+CXX = c++
+FLAGS = -std=c++98 -Wall -Wextra -Werror
+SRC = main.cpp
 

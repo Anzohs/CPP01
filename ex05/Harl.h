@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/31 20:44:02 by hladeiro          #+#    #+#             */
-/*   Updated: 2025/03/31 20:45:03 by hladeiro         ###   ########.fr       */
+/*   Updated: 2025/03/31 21:53:21 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,4 @@
 #include <iostream>
 #endif
 
+typedef char *string;
