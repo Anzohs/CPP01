@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/29 19:15:08 by hladeiro          #+#    #+#             */
-/*   Updated: 2025/03/30 13:06:00 by hladeiro         ###   ########.fr       */
+/*   Updated: 2025/04/03 18:30:02 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@
 # endif
 
 typedef char * string;
-void	subsitute(std::ifstream& input, std::ostream& output, std::string& s1, std::string& s2);
+void   subsitute(std::ifstream &input, std::ofstream &output, std::string &search, std::string &replace);
 #endif
