@@ -28,7 +28,7 @@ clean:
 	@rm -rf $(OBJ)
 	@echo "Objects clean"
 
-fclean:
+fclean: clean
 	@rm -rf $(NAME)
 	@echo "Executable removed"
 
