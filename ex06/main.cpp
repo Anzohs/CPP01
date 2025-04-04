@@ -36,6 +36,12 @@ int	main(int ac, string av[])
 		if (i == 3 && j== 0)
 			j = 4;
 	}
+	if (j == 4)
+	{
+		std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+		tester.complain("");
+		std::cout << std::endl;
+	}
 	for (;j < 4; j++)
 	{
 		std::cout << "[ " << level[j] << " ]" << std::endl;

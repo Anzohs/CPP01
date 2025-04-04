@@ -23,6 +23,7 @@ void Harl::error(void){std::cout << ERROR << std::endl;}
 
 void Harl::complain(std::string level)
 {
+	bool p = false;
 	std::string l[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	func f[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 
@@ -30,6 +31,9 @@ void Harl::complain(std::string level)
 		if (level == l[i])
 		{
 			(this->*(f[i]))();
+			p = true;
 		}
 	}
+	if (!p)
+		std::cout << "ERROR 404!!!!!!" << std::endl;
 }

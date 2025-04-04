@@ -12,7 +12,7 @@ HumanB::~HumanB(){}
 void HumanB::attack(void)
 {
 	if (!this->w)
-		return;
+		return (std::cout << "I will atack with my hands\n", (void)this->w);
 	std::cout << this->name << " attacks with their ";
 	std::cout << this->w->getType() << std::endl;
 }
