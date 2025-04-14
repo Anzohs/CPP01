@@ -100,6 +100,3 @@ License
 -------------------
 This project is licensed for educational purposes as part of the 42 curriculum.
 
-
-
-You can copy this `README` content into a `.txt` file named `README.txt`. Let me know if you need further adjustments!
