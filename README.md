@@ -19,7 +19,7 @@ Repository Structure
 ---------------------
 
 This repository is organized as follows:
-- **CPP00/**
+- **CPP01/**
   - `ex00/` - Exercise 00
   - `ex01/` - Exercise 01
   - `ex02/` - Exercise 02
